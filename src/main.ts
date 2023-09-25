@@ -51,3 +51,22 @@ if (isAdmin) {
 if (!isAdmin) {
     console.log('isAdmin ist false.');
 }
+
+
+function printChristmasTree(n) {
+    // Schleife für den oberen Teil des Weihnachtsbaums
+    for (let i = 1; i <= n; i++) {
+        let spaces = ' '.repeat(n - i); // Leerzeichen vor den Sternen
+        let stars = '*'.repeat(2 * i - 1); // Sterne
+        console.log(spaces + stars);
+    }
+
+    // Schleife für den Stamm des Weihnachtsbaums
+    for (let i = 0; i < n; i++) {
+        let spaces = ' '.repeat(n - 1); // Leerzeichen vor dem Stamm
+        console.log(spaces + '*');
+    }
+}
+
+// Aufruf der Funktion mit n = 5
+printChristmasTree(8);
