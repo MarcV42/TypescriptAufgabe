@@ -3,7 +3,7 @@ import './style.css'
 let
     age : number = 13,
 
-    username : string = "",
+    username : string = "Marc",
     isAdmin: boolean = false;
     const score: number = 1;
 
@@ -25,3 +25,29 @@ if (score !== 0) {
 }
 
 
+if (score) {
+    console.log('Score wird als truthy ausgewertet.');
+} else {
+    console.log('Score wird als falsy ausgewertet.');
+}
+
+
+if (username) {
+    console.log("Username " + username + " ist verfügbar.");
+}
+
+
+if (!username) {
+    console.log('Username wird als falsy ausgewertet.');
+}
+
+if (isAdmin) {
+    console.log('isAdmin wird als truthy ausgewertet.');
+} else {
+    console.log('isAdmin wird als falsy ausgewertet.');
+}
+
+
+if (!isAdmin) {
+    console.log('isAdmin ist false.');
+}
