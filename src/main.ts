@@ -2,10 +2,9 @@ import './style.css'
 
 let
     age : number = 13,
-
     username : string = "Marc",
-    isAdmin: boolean = false;
-    const score: number = 1;
+    isAdmin: boolean = false
+    const score: number = 1
 
 
 for (let i : number = 0; i< age; i++){
@@ -70,3 +69,5 @@ function printChristmasTree(n) {
 
 // Aufruf der Funktion mit n = 5
 printChristmasTree(8);
+
+
