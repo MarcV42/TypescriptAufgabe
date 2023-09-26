@@ -30,7 +30,6 @@ if (score) {
     console.log('Score wird als falsy ausgewertet.');
 }
 
-
 if (username) {
     console.log("Username " + username + " ist verfügbar.");
 }
